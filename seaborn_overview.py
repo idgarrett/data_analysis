@@ -30,3 +30,27 @@ sns.pairplot(tips, hue='sex')
 
 sns.rugplot(tips['total_bill'])
 
+sns.barplot(x='sex',y='total_bill', data=tips)
+
+sns.countplot(x='sex', data=tips)
+
+#box and violin plots - shows the distribution of data
+
+sns.boxplot(x='day', y='total_bill', data=tips)
+
+sns.boxplot(x='day', y='total_bill', data=tips, hue='smoker')
+
+#violin plot
+
+sns.violinplot(x='day', y='total_bill', data=tips)
+
+sns.violinplot(x='day', y='total_bill', data=tips, hue='sex', split=True)
+
+#swarmplot
+
+sns.swarmplot(x='day', y='total_bill', data=tips)
+
+
+
+
+
