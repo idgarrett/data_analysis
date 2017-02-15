@@ -42,12 +42,12 @@ from sklearn.metrics import classification_report,confusion_matrix
 print(classification_report(y_test,predictions))
 print('/n')
 print(confusion_matrix(y_test,predictions))
-
+"""
 from IPython.display import Image  
 from sklearn.externals.six import StringIO  
-from sklearn.tree import export_graphviz
+from sklearn.tree import export_graphviz ---NEED TO DOWNLOAD GRAPHVIZ SEPARATELY
 import pydot 
-
+"""
 features = list(df.columns[1:])
 features
 
