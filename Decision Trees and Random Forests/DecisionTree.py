@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-%matplotlib inline
+
 
 df = pd.read_csv('/Users/iangarrett/Python-Data-Science-and-Machine-Learning-Bootcamp/Machine Learning Sections/Decision-Trees-and-Random-Forests/kyphosis.csv')
 
@@ -20,7 +20,7 @@ sns.pairplot(df,hue='Kyphosis',palette='Set1')
 
 #Train Test Split
 
-from sklearn.model_selection import train_test_split
+from sklearn.cross_validation import train_test_split
 
 X = df.drop('Kyphosis',axis=1)
 y = df['Kyphosis']
