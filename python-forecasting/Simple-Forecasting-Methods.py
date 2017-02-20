@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # 1.2. CSV data file import
 # Dates must be in format yyyy-mm-dd
-data = pd.read_csv('C:\\Users\\Diego\\Desktop\\Forecasting Models with Python\\Apple Daily.csv', index_col='Date',
+data = pd.read_csv('/Users/iangarrett/Apple Daily.csv', index_col='Date',
                    parse_dates=True)
 
 # Imported data chart
